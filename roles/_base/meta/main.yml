@@ -1,0 +1,5 @@
+dependencies:
+  - role: macos_
+    vars:
+      target_defaults: "{{ _shared_defaults }}"
+      target_casks: "{{ _shared_casks }}"

@@ -1,0 +1,4 @@
+dependencies:
+  - role: macos_
+    vars:
+      target_casks: "{{ _personal_apps }}"

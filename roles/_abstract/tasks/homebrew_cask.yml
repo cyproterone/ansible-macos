@@ -1,0 +1,11 @@
+---
+
+- name: install brew cask
+  homebrew:
+    name: cask
+    update_homebrew: yes
+
+
+- name: "install casks {{ target_casks }}"
+  homebrew_cask:
+    cask: "{{ target_casks }}"
