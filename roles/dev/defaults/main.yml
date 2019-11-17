@@ -11,5 +11,6 @@ _programming_apps:
   - iterm2
   - visual-studio-code
   - docker
-  - multipass
+  - virtualbox
+  - vagrant
   - xquartz
