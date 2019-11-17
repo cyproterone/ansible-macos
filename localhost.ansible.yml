@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - import_role:
+        name: _base
+    - import_role:
+        name: dev
+    - import_role:
+        name: personal
