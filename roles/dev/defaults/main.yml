@@ -1,13 +1,13 @@
 ---
 
-_dev_sys_defaults:
+target_defaults:
   - domain: org.macosforge.xquartz.X11
     key: enable_iglx
     type: bool
     value: true
 
 
-_programming_apps:
+target_casks:
   - iterm2
   - visual-studio-code
   - docker

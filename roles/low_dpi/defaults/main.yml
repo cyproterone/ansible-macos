@@ -1,6 +1,6 @@
 ---
 
-_lo_dpi_defaults:
+target_defaults:
   - domain: /Library/Preferences/com.apple.windowserver.plist
     key: DisplayResolutionEnabled
     type: bool

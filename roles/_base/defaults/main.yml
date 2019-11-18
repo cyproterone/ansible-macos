@@ -1,6 +1,6 @@
 ---
 
-_shared_defaults:
+target_defaults:
   - domain: .GlobalPreferences
     key: com.apple.mouse.scaling
     type: string
@@ -17,7 +17,7 @@ _shared_defaults:
     value: 4
 
 
-_shared_casks:
+target_casks:
   - onyx
   - firefox
   - keka

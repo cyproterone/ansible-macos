@@ -1,5 +1,0 @@
-dependencies:
-  - role: _abstract
-    vars:
-      target_defaults: "{{ _dev_sys_defaults }}"
-      target_casks: "{{ _programming_apps }}"
