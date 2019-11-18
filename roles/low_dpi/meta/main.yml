@@ -1,0 +1,5 @@
+dependencies:
+  - role: _abstract
+    become: yes
+    vars:
+      target_defaults: "{{ _lo_dpi_defaults }}"
