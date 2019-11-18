@@ -1,10 +1,10 @@
 ---
 
 - name: writing defaults
+  loop: "{{ target_defaults }}"
   osx_defaults:
     domain: "{{ item.domain }}"
     key: "{{ item.key }}"
     type: "{{ item.type }}"
     value: "{{ item.value }}"
-  loop: "{{ target_defaults }}"
 
