@@ -1,5 +1,7 @@
 ---
 
+- import_tasks: _ssh.yml
+
 - import_tasks: homebrew_cask.yml
 
 - import_tasks: osx_defaults.yml
