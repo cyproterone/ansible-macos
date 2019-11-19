@@ -5,6 +5,9 @@
   gather_facts: no
 
   tasks:
+    - assert:
+        that: ansible_distribution == 'MacOSX'
+
     - import_role:
         name: _base
     - import_role:

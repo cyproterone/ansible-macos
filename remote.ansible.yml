@@ -3,5 +3,8 @@
 - hosts: "{{ host | default('all') }}"
 
   tasks:
+    - assert:
+        that: ansible_distribution == 'MacOSX'
+
     - import_role:
         name: _base
