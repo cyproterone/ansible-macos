@@ -1,0 +1,7 @@
+---
+
+- hosts: "{{ host | default('all') }}"
+
+  tasks:
+    - import_role:
+        name: _base

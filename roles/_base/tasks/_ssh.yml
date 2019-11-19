@@ -4,3 +4,11 @@
   authorized_key:
     user: "{{ ansible_user }}"
     key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
+
+- name: disable password login
+  become: yes
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    line: "PasswordAuthentication no"
+  register: __password_ssh
