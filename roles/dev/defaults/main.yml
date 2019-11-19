@@ -14,3 +14,11 @@ target_casks:
   - virtualbox
   - vagrant
   - xquartz
+  - qlcolorcode
+  - qlstephen
+  - qlmarkdown
+  - quicklook-json
+  - qlimagesize
+  - suspicious-package
+  - quicklookase
+  - qlvideo
