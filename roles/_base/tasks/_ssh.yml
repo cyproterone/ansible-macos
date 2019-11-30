@@ -7,7 +7,7 @@
 
 
 - name: disable password login
-  become: yes
+  become: True
   lineinfile:
     dest: "/etc/ssh/sshd_config"
     line: "PasswordAuthentication no"
