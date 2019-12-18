@@ -1,10 +1,10 @@
 ---
 
-target_defaults:
-  - domain: org.macosforge.xquartz.X11
-    key: enable_iglx
-    type: bool
-    value: true
+target_defaults: []
+  # - domain: org.macosforge.xquartz.X11
+  #   key: enable_iglx
+  #   type: bool
+  #   value: true
 
 
 target_casks:
