@@ -10,13 +10,11 @@ target_defaults:
 target_casks:
   - iterm2
   - visual-studio-code
-  - docker
   - qlcolorcode
   - qlstephen
   - qlmarkdown
   - quicklook-json
   - qlimagesize
-  - suspicious-package
   - quicklookase
   - qlvideo
   - webpquicklook
