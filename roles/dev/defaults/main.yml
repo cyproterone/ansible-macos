@@ -11,9 +11,6 @@ target_casks:
   - iterm2
   - visual-studio-code
   - docker
-  - virtualbox
-  - vagrant
-  - xquartz
   - qlcolorcode
   - qlstephen
   - qlmarkdown
@@ -22,3 +19,4 @@ target_casks:
   - suspicious-package
   - quicklookase
   - qlvideo
+  - webpquicklook
