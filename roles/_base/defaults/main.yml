@@ -3,12 +3,12 @@
 target_defaults:
   - domain: .GlobalPreferences
     key: com.apple.mouse.scaling
-    type: float
+    type: string
     value: -1
 
   - domain: .GlobalPreferences
     key: com.apple.scrollwheel.scaling
-    type: float
+    type: string
     value: -1
 
   - domain: com.apple.TextEdit
@@ -20,5 +20,6 @@ target_defaults:
 target_casks:
   - onyx
   - firefox
+  - microsoft-edge
   - keka
   - balenaetcher
