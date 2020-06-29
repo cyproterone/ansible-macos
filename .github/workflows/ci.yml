@@ -1,0 +1,23 @@
+---
+name: CI
+
+on:
+  push:
+    branches:
+      - wang
+  schedule:
+    - cron: "0 0 * * *" # daily
+
+jobs:
+  macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Ansible
+        run: brew install ansible
+
+      - name: Build
+        run: ansible-playbook localhost.ansible.yml
