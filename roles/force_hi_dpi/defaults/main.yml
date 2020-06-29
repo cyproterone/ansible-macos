@@ -1,7 +1,0 @@
----
-
-target_defaults:
-  - domain: /Library/Preferences/com.apple.windowserver.plist
-    key: DisplayResolutionEnabled
-    type: bool
-    value: true

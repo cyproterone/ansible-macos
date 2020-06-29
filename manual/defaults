@@ -6,3 +6,9 @@ defaults delete com.apple.dock autohide-time-modifier
 # defaults delete com.apple.dock autohide-delay
 
 killall Dock
+
+
+domain: /Library/Preferences/com.apple.windowserver.plist
+key: DisplayResolutionEnabled
+type: bool
+value: true
