@@ -23,7 +23,9 @@ jobs:
         run: |-
           mkdir -p '~/Library/Mobile Documents/com~apple~CloudDocs'
           cd '~/Library/Mobile Documents/com~apple~CloudDocs' || exit 1
+          cd .. || exit 1
           ls
+          pwd
 
       - name: Build
         run: ansible-playbook localhost.ansible.yml
