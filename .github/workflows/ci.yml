@@ -20,7 +20,10 @@ jobs:
         run: brew install ansible
 
       - name: Fake iCloud
-        run: mkdir -p '~/Library/Mobile Documents/com~apple~CloudDocs'
+        run: |-
+          mkdir -p '~/Library/Mobile Documents/com~apple~CloudDocs'
+          cd '~/Library/Mobile Documents/com~apple~CloudDocs' || exit 1
+          ls
 
       - name: Build
         run: ansible-playbook localhost.ansible.yml
