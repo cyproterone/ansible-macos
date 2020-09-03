@@ -22,10 +22,8 @@ target_casks:
   - firefox
   - microsoft-edge
   - keka
-  - balenaetcher
 
 
 target_links:
   - src: "~/Library/Mobile Documents/com~apple~CloudDocs"
     dest: "~/.icloud"
-
