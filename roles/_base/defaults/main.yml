@@ -20,8 +20,6 @@ target_defaults:
 target_casks:
   - onyx
   - firefox
-  - microsoft-edge
-  - keka
 
 
 target_links:
