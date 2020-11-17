@@ -7,7 +7,3 @@
 - import_tasks: link.yml
 
 - import_tasks: git.yml
-
-- import_tasks: sync.yml
-
-- import_tasks: template.yml

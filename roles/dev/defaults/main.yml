@@ -1,8 +1,13 @@
 ---
 
-target_defaults: []
-  # - domain: org.macosforge.xquartz.X11
-  #   key: enable_iglx
-  #   type: bool
-  #   value: true
+target_files:
+  - src: "scripts/"
+    dest: "{{ _scripts_bin_ }}/"
 
+
+target_templates:
+  - src: "services/bing.plist.j2"
+    dest: "{{ _launchd_home_ }}/bing.plist"
+
+
+target_services: []

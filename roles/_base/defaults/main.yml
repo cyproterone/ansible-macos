@@ -35,13 +35,3 @@ git_repos:
 
   - src: "https://github.com/cyproterone/alacritty.git"
     dest: "{{ _xdg_conf_home_ }}/alacritty"
-
-
-target_files:
-  - src: "scripts/"
-    dest: "{{ _scripts_bin_ }}/"
-
-
-target_templates:
-  - src: "services/bing.plist.j2"
-    dest: "{{ _launchd_home_ }}/bing.plist"

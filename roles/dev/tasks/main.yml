@@ -1,3 +1,7 @@
 ---
 
-- import_tasks: osx_defaults.yml
+- import_tasks: sync.yml
+
+- import_tasks: template.yml
+
+- import_tasks: launchd.yml

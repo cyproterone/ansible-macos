@@ -1,0 +1,7 @@
+---
+
+- name: launchd
+  loop: "{{ target_services }}"
+  community.general.launchd:
+    state: started
+    name: "{{ item }}"
