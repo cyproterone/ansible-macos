@@ -10,5 +10,6 @@ target_templates:
     dest: "{{ _launchd_home_ }}/bing.wallpaper.plist"
 
 
-target_services:
-  - "bing.wallpaper"
+# Needs ansible to update for python 3.9
+target_services: []
+  # - "bing.wallpaper"
