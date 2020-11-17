@@ -33,22 +33,22 @@ def sanitize(
     return "".join(sanitized).rstrip()
 
 
-def extract(partial: Any) -> Tuple[str, str]:
-    uri = f"https://www.bing.com/{partial['url']}"
-    title = partial["title"]
-    date = datetime.strptime(partial["startdate"], "%Y%m%d")
-    formatted_date = date.strftime("%Y_%m_%d")
-    query = urlparse(uri).query
-    file_name = parse_qs(query)["id"][0]
-    _, ext = splitext(file_name)
-    filename = sanitize(f"{formatted_date} {title}{ext}")
-    return uri, filename
-
-
 async def bing(count=1) -> Sequence[Tuple[str, str]]:
     uri = f"https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n={count}"
     res = await get(uri)
     hist = loads(res.decode())
+
+    def extract(partial: Any) -> Tuple[str, str]:
+        uri = f"https://www.bing.com/{partial['url']}"
+        title = partial["title"]
+        date = datetime.strptime(partial["startdate"], "%Y%m%d")
+        formatted_date = date.strftime("%Y_%m_%d")
+        query = urlparse(uri).query
+        file_name = parse_qs(query)["id"][0]
+        _, ext = splitext(file_name)
+        filename = sanitize(f"{formatted_date} {title}{ext}")
+        return uri, filename
+
     images = tuple(extract(i) for i in hist["images"])
     return images
 
@@ -64,16 +64,19 @@ async def main() -> None:
     args = parse_args()
     base_path = realpath(args.out)
     images = await bing(args.days)
+
     candidates = tuple(
         (uri, filename)
         for uri, filename in images
         if not isfile(join(base_path, filename))
     )
+
     futures = (get(uri) for uri, _ in candidates)
     res = await gather(*futures)
     for data, (_, filename) in zip(res, candidates):
         path = join(base_path, filename)
         write(data, path)
+
     print(f"-- | {datetime.now()} | --")
 
 
