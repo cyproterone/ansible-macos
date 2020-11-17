@@ -6,15 +6,3 @@ target_defaults: []
   #   type: bool
   #   value: true
 
-
-target_casks: []
-#   - iterm2
-#   - visual-studio-code
-#   - qlcolorcode
-#   - qlstephen
-#   - qlmarkdown
-#   - quicklook-json
-#   - qlimagesize
-#   - quicklookase
-#   - qlvideo
-#   - webpquicklook
