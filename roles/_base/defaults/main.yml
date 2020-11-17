@@ -20,6 +20,7 @@ target_defaults:
 target_dirs:
   - "{{ _xdg_conf_home_ }}"
   - "{{ _xdg_cache_home_ }}"
+  - "{{ _scripts_bin_ }}"
 
 
 target_links:
@@ -33,3 +34,13 @@ git_repos:
 
   - src: "https://github.com/cyproterone/alacritty.git"
     dest: "{{ _xdg_conf_home_ }}/alacritty"
+
+
+target_files:
+  - src: "scripts/"
+    dest: "{{ _scripts_bin_ }}/"
+
+
+target_templates:
+  - src: "services/bing.plist.j2"
+    dest: "{{ _launchd_home_ }}/bing.plist"
