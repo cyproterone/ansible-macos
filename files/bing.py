@@ -61,7 +61,6 @@ def parse_args() -> Namespace:
 
 
 async def main() -> None:
-    print(f"-- | {datetime.now()} | --")
     args = parse_args()
     base_path = realpath(args.out)
     images = await bing(args.days)
@@ -75,6 +74,7 @@ async def main() -> None:
     for data, (_, filename) in zip(res, candidates):
         path = join(base_path, filename)
         write(data, path)
+    print(f"-- | {datetime.now()} | --")
 
 
 if __name__ == "__main__":
