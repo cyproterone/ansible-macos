@@ -1,0 +1,9 @@
+---
+
+- name: clone git repos
+  loop: "{{ git_repos }}"
+  git:
+    depth: 1
+    force: True
+    repo: "{{ item.src }}"
+    dest: "{{ item.dest }}"

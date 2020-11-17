@@ -2,4 +2,8 @@
 
 - import_tasks: osx_defaults.yml
 
+- import_tasks: mkdir.yml
+
 - import_tasks: link.yml
+
+- import_tasks: git.yml

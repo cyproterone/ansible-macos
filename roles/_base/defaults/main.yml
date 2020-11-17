@@ -17,6 +17,18 @@ target_defaults:
     value: 4
 
 
+target_dirs:
+  - "{{ _xdg_conf_home_ }}"
+
+
 target_links:
   - src: "~/Library/Mobile Documents/com~apple~CloudDocs"
     dest: "~/.icloud"
+
+
+git_repos:
+  - src: "https://github.com/cyproterone/iterm2.git"
+    dest: "{{ _xdg_conf_home_ }}/iterm2"
+
+  - src: "https://github.com/cyproterone/alacritty.git"
+    dest: "{{ _xdg_conf_home_ }}/alacritty"
