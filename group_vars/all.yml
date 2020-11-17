@@ -1,7 +1,7 @@
 ---
 
 _scripts_bin_: "~/.local/scripts"
-_launchd_home_: "~/.local/launchd"
+_launchd_home_: "~/Library/LaunchAgents"
 
 _xdg_conf_home_: "~/.config"
 _xdg_data_home_: "~/.local/share"
