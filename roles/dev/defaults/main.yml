@@ -7,14 +7,14 @@ target_defaults: []
   #   value: true
 
 
-target_casks:
-  - iterm2
-  - visual-studio-code
-  - qlcolorcode
-  - qlstephen
-  - qlmarkdown
-  - quicklook-json
-  - qlimagesize
-  - quicklookase
-  - qlvideo
-  - webpquicklook
+target_casks: []
+#   - iterm2
+#   - visual-studio-code
+#   - qlcolorcode
+#   - qlstephen
+#   - qlmarkdown
+#   - quicklook-json
+#   - qlimagesize
+#   - quicklookase
+#   - qlvideo
+#   - webpquicklook
